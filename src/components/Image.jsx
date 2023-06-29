@@ -44,7 +44,7 @@ export const Image = () => {
           Author:{' '}
           <Link to={`/users/${image.user.username}`}>{image.user.name}</Link>
         </p>
-        <Link to="/" className="page-back">
+        <Link to="/search-photo-app" className="page-back">
           <button>Go back</button>
         </Link>
       </div>

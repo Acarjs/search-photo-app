@@ -9,7 +9,7 @@ export const SearchResults = ({ imageList, page, setPage }) => {
   return (
     <>
       {page && (
-        <Link to="/" className="page-back">
+        <Link to="/search-photo-app" className="page-back">
           <button>Go back</button>
         </Link>
       )}

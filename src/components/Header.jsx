@@ -12,7 +12,7 @@ export const Header = () => {
   return (
     <>
       <nav id="nav">
-        <Link to="/">Home</Link>
+        <Link to="/search-photo-app">Home</Link>
       </nav>
       <div className="dimension-section">
         <span>
