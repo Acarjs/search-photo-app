@@ -1,0 +1,141 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+}
+
+.preload {
+  width: 60px;
+  height: 60px;
+  border: 8px solid #ffffff;
+  border-top: 8px solid hsla(160, 100%, 37%, 1);
+  border-radius: 50%;
+  animation: spin 0.7s ease-in-out infinite;
+  margin: 50px auto;
+  backdrop-filter: blur(100px);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.imageLink {
+  height: 90%;
+  cursor: pointer;
+}
+
+.imageInfo {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  color: white;
+  display: none;
+  transition: all 0.5 ease-in-out;
+}
+.imageInfo a {
+  text-decoration: none;
+  color: white;
+}
+.imageStats {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bi.bi-heart {
+  transform: scale(1.1);
+  transform: translateY(1px);
+}
+
+.image:hover .imageInfo {
+  display: flex;
+  transition: all 0.5 ease-in-out;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
+.imageContainer img {
+  max-height: 80vh;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.dimension-section {
+  margin-top: 1rem;
+}
+
+.search-bar {
+  margin: 1rem auto auto;
+  width: 360px;
+}
+
+.input {
+  background-color: #f6f6f6;
+  width: 80%;
+  border-radius: 15px;
+  height: 1rem;
+  color: #1a1a1a;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-style: none;
+}
+
+.input:focus {
+  background-color: #f6f6f6;
+  border-style: none;
+}
+
+span {
+  color: #1a1a1a;
+}
